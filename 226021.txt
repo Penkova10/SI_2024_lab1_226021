@@ -1,0 +1,136 @@
+SI lab1:
+4.
+cd SI_2024_lab1_226021
+git init
+креираme нов Git репозиториум SI_2024_lab1_226021
+
+5.
+git remote add origin https://github.com/Penkova10/SI_2024_lab1_226021.git
+Го поврзуваме локалниот репозиториум со оддалечениот репозиториум
+
+6.
+echo "Ivana Penkova 226021" >> README.md
+Креираме датотека README.md со содржина "Ivana Penkova 226021"
+
+git add README.md
+Го додаваме README.md во staging area
+
+git commit -m "Initial commit"
+Ги зачувуваме промените во staging area како нов комит со порака "Initial commit" на Git репозиториумот SI_2024_lab1_226021
+
+7.
+git add .
+Ги додаваме сите новите три фајлови во staging area
+
+git commit -m "Add starter code"
+Креираме нов комит во Git репозиториумот со порака "Add starter code"
+
+8.
+git push -u origin master
+Ги праќаме локалните промени во master гранката на оддалечениот репозиторум origin
+
+9.
+git branch bug1
+Креираме гранка bug1 
+
+git branch bug2
+Креираме гранка bug1
+
+10.
+git checkout bug1
+Се префрламе на гранката bug1
+
+11.
+nano SIlab1_1.java
+Ја поправаме грешката во SIlab1_1.java 
+
+git commit -a -m "Fix wrong condition in filterOddLengthStrings"
+Креираме нов комит во Git репозиториумот со сите проследени промени со пораката "Fix wrong condition in filterOddLengthStrings"
+
+12.
+git checkout bug2
+Се префрламе на гранката bug2
+
+13.
+nano SIlab1_2.java
+Ја поправаме грешката во SIlab1_1.java 
+
+git commit -a -m "Fix wrong condition in makeBigStringFrom"
+Креираме нов комит во Git репозиториумот со сите проследени промени со пораката "Fix wrong condition in makeBigStringFrom"
+
+14.
+git checkout bug1
+Се префрламе на гранката bug1
+
+15.
+nano SILab1Main.java
+Во SILab1Main.java додаваме повик до статичкиот метод filterOddLengthStrings
+
+git commit -a -m "Call method filterOddLengthStrings in main class"
+Креираме нов комит во Git репозиториумот со сите проследени промени со пораката "Call method filterOddLengthStrings in main class"
+
+16.
+git checkout bug2
+Се префрламе на гранката bug2
+
+17.
+nano SILab1Main.java
+Во SILab1Main.java додаваме повик до статичкиот метод makeBigStringFrom
+git commit -a -m " Call method makeBigStringFrom in main class"
+Креираме нов комит во Git репозиториумот со сите проследени промени со пораката " Call method makeBigStringFrom in main class"
+
+18.
+Ги синхронизираме сите гранки со оддалечениот репозиториум.
+git push origin master
+git push origin bug1
+git push origin bug2
+
+19.
+git checkout master
+Се префрламе на гранката master
+
+20.
+git merge bug1
+Ги спојува промените од гранката bug1 во тековната гранка master и креира нов комит за спојување, што ги зачувува промените од двете гранки во историјата на комити. Спојувањето е Fast forward. 
+
+21.
+Ги синхронизираме сите гранки со оддалечениот репозиториум.
+git push origin master
+git push origin bug1
+git push origin bug2
+
+22.
+git checkout bug2
+Се префрламе на гранката bug2
+
+23.
+git rebase master
+Ги префрламе промените од тековната гранка bug2 врз гранката master и со тоа се реорганизира историјата на комити и за разлика од git merge не се креира нов комит за спојување на комитите од тековната и главната гранка.
+Бидејќи се појави конфликт со nano SILab1Main го решив конфликтот и потоа а извршив наредбата git rebase --continue
+
+24.
+git checkout master
+Се префрламе на гранката master
+
+25.
+git merge bug2
+
+26.
+Ги синхронизираме сите гранки со оддалечениот репозиториум.
+git push origin master
+git push origin bug1
+git push origin bug2
+
+27.
+git push --force origin bug2
+Принудено ги праќаме промените на гранката bug2 во оддалечениот репозиториум origin
+
+28.
+git add --all
+git commit -m "Final commit"
+
+29.
+Ги синхронизираме сите гранки со оддалечениот репозиториум.
+git push origin master
+git push origin bug1
+git push origin bug2

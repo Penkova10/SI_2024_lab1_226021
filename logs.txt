@@ -1,0 +1,38 @@
+$ git log
+commit 4e58d0ee064be333f00f3f6da24c7bc29e18a084 (HEAD -> master, origin/master, origin/bug2, bug2
+Author: Penkova10 <ivanapenkova@gmail.com>
+Date:   Sun Apr 14 14:21:57 2024 +0200
+
+     Call method makeBigStringFrom in main class
+
+    Call method makeBigStringFrom instead of method filterOddLengthStrings
+
+commit c1445093af075348af2b0b2dfc96d18e544c7681
+Author: Penkova10 <ivanapenkova@gmail.com>
+Date:   Sun Apr 14 14:03:43 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit ce21cf85aa37989a094566a3fadd72618c5b639b (origin/bug1, bug1)
+Author: Penkova10 <ivanapenkova@gmail.com>
+Date:   Sun Apr 14 14:15:51 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 4173be3a8e5c9f4a24c2fd4cd2743ae6603a518c
+Author: Penkova10 <ivanapenkova@gmail.com>
+Date:   Sun Apr 14 13:57:02 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 556ed01f99fbcd987e81a883e564f29e3bb7a423
+Author: Penkova10 <ivanapenkova@gmail.com>
+Date:   Sun Apr 14 13:44:47 2024 +0200
+
+    Add starter code
+
+commit b2bb472b69890a48e1acf2e479ed3e0639bd24e7
+Author: Penkova10 <ivanapenkova@gmail.com>
+Date:   Sun Apr 14 13:43:12 2024 +0200
+
+    Initial commit
